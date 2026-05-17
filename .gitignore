@@ -220,16 +220,8 @@ __marimo__/
 # ArtIE project-specific
 .env
 .env.*
-config.js
-/etc/artie/*.env
-
-
-
-
-# ArtIE project-specific
-.env
-.env.*
 !.env.example
+/etc/artie/*.env
 config.js
 
 # Editor / OS
