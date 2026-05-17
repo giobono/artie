@@ -1,0 +1,5 @@
+# This file exists to ensure the prompts/production/ directory is tracked in git
+# even when empty. This directory is reserved per platform contract §14.1 for
+# production-tuned prompt variants that overlay the reference prompts at deploy
+# time. No production-tuned variants exist in v0.9.3 — all calls use the
+# reference prompts directly.

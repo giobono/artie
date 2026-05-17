@@ -1,0 +1,10 @@
+# This file exists to ensure the prompts/reference/ directory is tracked in git
+# even when empty. It will be removed once the first reference prompt lands:
+#
+#   apps/gioiaie/prompts/reference/phase1_consolidate_v0_9_1.md
+#
+# Reference prompts are the open, citable versions of the prompts used by the
+# gioiaie application. Production-tuned variants (if any) overlay this directory
+# at deploy time per platform contract §14.1.
+#
+# Filename suffix tracks the methodology version, not the application release.
