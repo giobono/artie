@@ -1,7 +1,7 @@
 """
-gioiaie router — defines endpoints under /v1/gioiaie/.
+gioianie router — defines endpoints under /v1/gioianie/.
 
-The router is mounted by the ArtIE platform at /v1/gioiaie/; paths in this
+The router is mounted by the ArtIE platform at /v1/gioianie/; paths in this
 module are defined relative to that prefix. The platform's application
 discovery imports this package and reads the `router` attribute exported
 from __init__.py.
