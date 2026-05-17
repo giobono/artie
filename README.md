@@ -1,1 +1,1 @@
-ArtIE Readme - lots of information goes here.
+ArtIE README - Lots of information goes here
