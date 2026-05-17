@@ -19,13 +19,13 @@ until the file grows large enough to justify splitting by phase.
 
 from fastapi import APIRouter
 
-router = APIRouter(tags=["gioiaie"])
+router = APIRouter(tags=["gioianie"])
 
 
 @router.get("/health")
 async def health() -> dict:
     """
-    Liveness probe for the gioiaie application.
+    Liveness probe for the gioianie application.
 
     Returns 200 with a minimal payload if the package has loaded and the
     router is mounted. A 404 from this endpoint after deployment indicates
@@ -36,4 +36,4 @@ async def health() -> dict:
     deploy-pipeline failures visible at five-second cost rather than buried
     inside a substantive endpoint failure.
     """
-    return {"status": "ok", "app": "gioiaie"}
+    return {"status": "ok", "app": "gioianie"}
