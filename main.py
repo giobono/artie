@@ -10,6 +10,7 @@ import os
 from dotenv import load_dotenv
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from apps.gioianie import router as gioianie_router
 
 # Load .env in local development; harmless in dev/prod where env vars come
 # from systemd's EnvironmentFile and .env may not exist.
@@ -18,6 +19,7 @@ load_dotenv()
 from apps.corres.api import llm as corres_llm
 
 app = FastAPI(title="ArtIE Platform API", version="0.1.0")
+app.include_router(gioianie_router, prefix="/v1/gioianie")
 
 # CORS allow-list comes from the environment so each deployment declares
 # which frontend origins are permitted. Comma-separated.
